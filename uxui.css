@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.back h1{
+  font-size: 130px;
+  position: absolute;
+  opacity: .1;
+  color: rgb(155, 132, 132);
+  top: 75%;
+  left: 10%;
+}
+
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.header .logo  p{
+    color: rgb(19, 17, 17);
+    margin:20px ;
+    float: left;
+    font-size: 20px;
+}
+.header ul{
+    list-style: none;
+    display: inline-flex;
+    float: right;
+}
+.header ul li{
+    font-size: 20px;
+    margin: 20px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+.header ul li a:hover{
+    color: rgb(13, 14, 14);
+    font-weight: bolder;
+    
+}
+.header ul ul{
+    display: none;
+}
+.header ul li:hover ul{
+    display: block;
+    position: absolute;
+    min-width: 160px;
+}
+.header ul li:hover ul li{
+    float: none;
+    margin:10px 0;
+}
+
+/*------------------------------section1-----------------------------------------*/
+.sec-1{
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+a {
+  color: rgb(10, 10, 10);
+  text-decoration: none;
+ 
+}
+.social {
+  
+  padding-top: 5%;
+  padding-left: 93%;
+  
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0,0);
+  
+}
+
+.social ul li {
+  display: block;
+  margin: 5px 5px 5px 30px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: left;
+  padding: 10px;
+  -webkit-border-radius: 30px 0 0 30px;
+  border-radius: 30px 0 0 30px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(-100px, 0);
+  transform: translate(-100px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: rgb(13, 14, 13);
+  font-weight: bolder;
+}
+.social ul li:hover i {
+  color: rgb(14, 13, 13);
+  background: blue;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/*----------------------------------------content1------------------------------------------------------*/
+
+.cont-1{
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    width: 600px;
+    height: 200px;
+    color: black;
+}
+.cont-1 h1{
+    margin:  30px 0;
+    font-size: 60px;
+}
+.cont-1 h2{
+    margin:  30px 0;
+    font-size: 30px;
+    color: blue;
+}
+.cont-1 p{
+    font-size: 25px;
+    text-indent: 10%;
+}
+
+
+/*-------------------------------------section2---------------------------------------------------------*/
+
+.sec-2{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+}
+.sec-2 h1{
+  width: 600px;
+  margin: 20px 0;
+}
+.sec-2 ul{
+  list-style: none;
+  display: inline-flex;
+}
+.sec-2 ul li{
+  text-align: center;
+}
+.sec-2 p{
+  font-size: 20px;
+  color: rgb(10, 10, 10);
+  font-weight: 900;
+}
+
+.sec-2 img{
+  width: 100px;
+  height: 100px;
+  margin: 50px 30px 0 30px;
+}
+.sec-2 span{
+ font-size: 75px;
+ text-align: center;
+ margin-top: 50px;
+}
+
+/*---------------------------------------section3---------------------------------------------------------*/
+.sec-3{
+  position: relative;
+  width: 1110px;
+  left: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+ 
+}
+.sec-3 .box{
+  position: relative;
+  width: 320px;
+  margin-top: 10%;
+  background: #fff;
+  padding: 30px 40px 60px;
+  box-shadow: 0 15px 45px rgba(0,0,0,.1);
+
+}
+
+.sec-3 .box:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d33066;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.sec-3 .box:hover:before{
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.sec-3 .box h1{
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  font-weight: 4em;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.sec-3 .box:hover h1{
+  opacity: 1;
+  color: #fff;
+  transform:translate(-40px);
+  top: 43px;
+}
+
+.sec-3 .box h2{
+  position: relative;
+  font: 1.5em;
+  z-index: 2;
+  color:blue;
+  transition: 0.5s;
+  margin: 20px;
+}
+
+.sec-3 .box p{
+  position: relative;
+  z-index: 2;
+  color:#555;
+  transition: 0.5s;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.sec-3 .box:hover h2, .sec-3 .box:hover p{
+  color: #fff;
+
+}
+
+/*------------------------------section4--------------------------------------*/
+.sec-4{
+  position: relative;
+  width: 700px;
+  left: 20%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 70px 20px 20px 20px;
+ 
+}
+.sec-4 .box{
+  position: relative;
+  width: 320px;
+  background: #fff;
+  padding: 50px 40px 60px;
+  box-shadow: 0 15px 45px rgba(0,0,0,.1);
+  
+}
+
+.sec-4 .box:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d33066;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.sec-4 .box:hover:before{
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.sec-4 .box h1{
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  font-weight: 4em;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.sec-4 .box:hover h1{
+  opacity: 1;
+  color: #fff;
+  transform:translate(-40px);
+  top: 43px;
+}
+
+.sec-4 .box h2{
+  position: relative;
+  font: 1.5em;
+  z-index: 2;
+  color:blue;
+  transition: 0.5s;
+  margin-left: 20px;
+}
+
+.sec-4 .box p{
+  position: relative;
+  z-index: 2;
+  color:#555;
+  transition: 0.5s;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.sec-4 .box:hover h2, .sec-4 .box:hover p{
+  color: #fff;
+}
+
+/*-----------------------------section5------------------------------------------------------*/
+
+.sec-5{
+  width: 1200px;
+
+}
+.sec-5 .cont-5{
+  position: relative;
+  left: 8%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 40px;
+
+}
+
+.sec-5 h1{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.sec-5 .cont-5 .box{
+  position: relative;
+  width: 350px;
+  background: #fff;
+}
+
+.sec-5 .cont-5 .box h1{
+  margin: 10px;
+  font-weight: 4em;
+  font-weight: 800;
+}
+
+.sec-5 .cont-5 .box h2{
+  font: 1.5em;
+  color:blue;
+  margin: 10px;
+}
+
+.sec-5 .cont-5 .box p{
+  color:#555;
+  transition: 0.5s;
+  text-indent: 10%;
+  font-size: 20px;
+}
